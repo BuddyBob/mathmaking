@@ -25,7 +25,7 @@ function returnUserData(userId) {
     });
 }
 
-const calculateMatchingScore = (grade, interests, learning, userLearning, userGrade, userInterests) => {
+const calculateMatchingScore = (grade, interests, userGrade, userInterests) => {
   let matchingScore = 0;
   let maxScore = interests.length + 10;
 
@@ -39,12 +39,6 @@ const calculateMatchingScore = (grade, interests, learning, userLearning, userGr
     const commonInterests = interests.filter((interest) => userInterests.includes(interest));
     const numCommonInterests = commonInterests.length;
     matchingScore += numCommonInterests;
-  }
-
-  if (learning && userLearning) {
-    const commonLearning = learning.filter((learned) => userInterests.includes(learned));
-    const numCommonLearning = commonLearning.length;
-    matchingScore += numCommonLearning;
   }
 
   const accuracyPercentage = (matchingScore / maxScore) * 100;
@@ -67,7 +61,7 @@ const MathMaker = () => {
   const handleSubmit = () => {
     if (!userData) return;
 
-    const { grade, interests, learning } = userData;
+    const { grade, interests } = userData;
 
     db.collection('users')
       .get()
@@ -76,8 +70,8 @@ const MathMaker = () => {
 
         querySnapshot.forEach((doc) => {
             const user = { ...doc.data(), uid: doc.id };
-          const { grade: userGrade, interests: userInterests, learning: userLearning } = user;
-          const matchingScore = calculateMatchingScore(grade, interests, learning, userLearning, userGrade, userInterests);
+          const { grade: userGrade, interests: userInterests } = user;
+          const matchingScore = calculateMatchingScore(grade, interests, userGrade, userInterests);
           matchedUsers.push({ user, matchingScore });
         });
 
@@ -197,15 +191,6 @@ const MathMaker = () => {
                     {user.interests && (
                       user.interests.map((interest) => (
                         <div key={interest} className="mm-text">{interest}</div>
-                      ))
-                    )}
-                  </div>
-                  <div className="matched-user-section">
-                    <strong className="mm-section">Learning</strong>
-                    <br />
-                    {user.learning && (
-                      user.learning.map((learning) => (
-                        <div key={learning} className="mm-text">{learning}</div>
                       ))
                     )}
                   </div>

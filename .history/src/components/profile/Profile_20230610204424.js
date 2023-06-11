@@ -57,10 +57,6 @@ const Profile = () => {
   const interested_already = []
   const grades = ['6', '7', '8', '9', '10', '11', '12', '12+'];
     const grades_already = []
-  
-  const learning = ['Math','Science','English','History','Art','Music','Computer Science','Foreign Language','Geometry','Physics','Biology','Chemistry','Literature','Geography','Physical Education','Economics','Psychology','Sociology','Political Science',]
-  
-  const learning_already = []
 
   return (
     <div>
@@ -71,6 +67,7 @@ const Profile = () => {
           {console.log(userData.username)}
           <h1 className="title">Profile</h1>
           <div className="data">
+            <br />
             <div className="interests">
               <h2 className="section">Interests</h2>
               {userData.interests ? (
@@ -85,7 +82,8 @@ const Profile = () => {
                 onSubmit={(tags) => handleSubmit('interests', tags)}
               />
             </div>
-
+            <br />
+            <br />
             <div className="grade">
               <h2 className="section">Grade</h2>
               {userData.grade ? (
@@ -98,20 +96,6 @@ const Profile = () => {
                 already={grades_already}
                 tags_={grades}
                 onSubmit={(tags) => handleSubmit('grade', tags)}
-              />
-            </div>
-            <div className="learning">
-              <h2 className="section">Learning</h2>
-              {userData.learning ? (
-                userData.learning.map((i) => {
-                  learning_already.push(i);
-                  return null; // Return null in map function to avoid rendering issues
-                })
-              ) : null}
-              <Tag
-                already={learning_already}
-                tags_={learning}
-                onSubmit={(tags) => handleSubmit('learning', tags)}
               />
             </div>
           </div>

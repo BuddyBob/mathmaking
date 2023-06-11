@@ -20,7 +20,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    margin-bottom:90px;
+    margin-bottom:40px;
 
   }
   
@@ -29,8 +29,6 @@
   h2 {
     margin: 10px 0;
     color: var(--title-color);
-    margin-bottom:20px;
-    margin-top:50px;
   }
   
   input {

@@ -58,8 +58,7 @@ const Profile = () => {
   const grades = ['6', '7', '8', '9', '10', '11', '12', '12+'];
     const grades_already = []
   
-  const learning = ['Math','Science','English','History','Art','Music','Computer Science','Foreign Language','Geometry','Physics','Biology','Chemistry','Literature','Geography','Physical Education','Economics','Psychology','Sociology','Political Science',]
-  
+  const learning = ['Math', 'Science', 'English', 'History', 'Art', 'Music', 'Computer Science', 'Foreign Language', 'Other'];
   const learning_already = []
 
   return (

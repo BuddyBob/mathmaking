@@ -201,15 +201,6 @@ const MathMaker = () => {
                     )}
                   </div>
                   <div className="matched-user-section">
-                    <strong className="mm-section">Learning</strong>
-                    <br />
-                    {user.learning && (
-                      user.learning.map((learning) => (
-                        <div key={learning} className="mm-text">{learning}</div>
-                      ))
-                    )}
-                  </div>
-                  <div className="matched-user-section">
                     <strong className="mm-section">Grades</strong>
                     <br />
                     {user.grade && (
