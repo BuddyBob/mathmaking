@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #3366CC;
+    --secondary-color: #FF9933;
+    --background-color: #F4F4F4;
+    --background-color2: rgb(209, 32, 32);
+    --text-color: #737272;
+    --title-color: #565151;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@500&display=swap');
+  

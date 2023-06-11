@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #3366CC;
+    --secondary-color: #FF9933;
+    --background-color: #F4F4F4;
+    --background-color2: rgb(186, 185, 185);
+    --text-color: #737272;
+    --title-color: #565151;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  .tag-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .selected-tags button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 13px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .selected-tags button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .tag-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #412c2c;
+    background-color: #3366CC;
+    border-radius: 4px;
+  }
+  
+  .matching-tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  
+  .matching-tags li {
+    margin-bottom: 4px;
+  }
+  
+  .matching-tags button {
+    background-color: var(--text-color);
+    color: white;
+    padding: 13px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .matching-tags button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  

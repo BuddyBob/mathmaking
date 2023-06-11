@@ -1,0 +1,20 @@
+/** Variables */
+:root {
+    --background: #F8F6F4;
+    --dark: #2D2F31;
+    --white: #ede8e8;
+    --titleColor: #ffdc7a;
+    --hotPink:#ed3469
+}
+
+/** background color */
+body {
+    zoom: 1.4;
+    background-color: var(--background);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    padding: 10px;
+}

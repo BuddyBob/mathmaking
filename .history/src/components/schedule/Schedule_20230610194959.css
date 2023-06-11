@@ -1,0 +1,59 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .sched-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .sched-data {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .sched-data strong {
+    font-weight: bold;
+  }
+  
+  .sched-data::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .sched-data div {
+    float: left;
+    width: 50%;
+  }
+  
+  .sched-data br {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .sched-data div {
+      float: none;
+      width: 100%;
+    }
+  
+    .sched-data br {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  

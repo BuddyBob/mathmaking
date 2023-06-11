@@ -1,0 +1,21 @@
+
+  .sched-container {
+    margin-top: 20px;
+  }
+  
+  .sched-data {
+    margin-bottom: 20px;
+  }
+  
+  .sched-data strong {
+    font-weight: bold;
+  }
+  
+  .sched-data strong::after {
+    content: ":";
+  }
+  
+  .sched-data br {
+    margin-bottom: 10px;
+  }
+  

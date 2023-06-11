@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #3366CC;
+    --secondary-color: #FF9933;
+    --background-color: #F4F4F4;
+    --background-color2: rgb(209, 32, 32);
+    --text-color: #737272;
+    --title-color: #565151;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@500&display=swap');
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--title-color);
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--title-color);
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Add more custom styles as needed */
+  

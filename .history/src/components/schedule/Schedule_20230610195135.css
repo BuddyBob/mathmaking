@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #3366CC;
+    --secondary-color: #FF9933;
+    --background-color: #F4F4F4;
+    --background-color2: rgb(198, 195, 195);
+    --text-color: #737272;
+    --title-color: #807c7c;
+  }
+
+.sched-container {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.sched-data{
+display: flex;
+flex-direction: column;
+background-color: #3366CC;
+}
+
